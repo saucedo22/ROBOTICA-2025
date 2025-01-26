@@ -1,0 +1,28 @@
+/* Estilo para el select */
+select {
+    width: 100%;
+    padding: 10px 1px;
+    border: none;
+    border-radius: 5px;
+    background:  rgba(255, 255, 255, 0.1);/* Cambia el fondo aquí */
+    color: #000;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    appearance: none; /* Elimina estilos predeterminados del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Estilo para las opciones del select */
+select option {
+    background: #a5adb5; /* Cambia el fondo aquí */
+    color: #000; /* Color del texto */
+    font-size: 16px;
+}
+
+/* Forzar el color y el fondo al abrir la lista */
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #76b2fe; /* Opcional: Efecto al hacer clic */
+}

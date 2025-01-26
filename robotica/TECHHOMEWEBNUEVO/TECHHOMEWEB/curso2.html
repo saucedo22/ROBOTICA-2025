@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>TECH HOME - Página Principal</title>
+  <style>
+    /* Estilo para centrar los elementos del navbar */
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+      display: inline-block;
+    }
+
+    /* Enlace del navbar con margenes para centrar */
+    .nav-item {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .dropdown-menu {
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    
+    /* Estilo para las subsecciones que se actualizan */
+    .content-section {
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+  </style>    
+  <!-- Navbar con 7 secciones centradas -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">TECH HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              TECH HOME-BOT
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownCursos">
+              <li><a class="dropdown-item" href="curso1.html">Curso 1</a></li>
+              <li><a class="dropdown-item" href="curso2.html">Curso 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              LIBROS TECH HOME
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownNosotros">
+              <li><a class="dropdown-item" href="roboticaprimaria.html">ROBOTICA PRIMARIA</a></li>
+              <li><a class="dropdown-item" href="roboticasecundaria.html">ROBOTICA SECUNDARIA</a></li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html">CONTACTANOS</a> </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMetodologia">
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactanos.html">PLATAFORMA VIRTUAL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <hr>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .contenedor-principal {
+      width: 90%;
+      max-width: 1200px;
+      border: 2px dashed gray;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .contenedor-secundario {
+      border: 1px dashed blue;
+      margin: 10px 0;
+      padding: 10px;
+      min-height: 100px; /* Altura mínima de los contenedores secundarios */
+    }
+
+    .contenedor-secundario:nth-child(1) {
+      background-color: rgba(255, 0, 0, 0.1); /* Color de guía para identificar */
+    }
+
+    .contenedor-secundario:nth-child(2) {
+      background-color: rgba(0, 255, 0, 0.1); /* Color de guía para identificar */
+    }
+
+    .contenedor-secundario:nth-child(3) {
+      background-color: rgba(0, 0, 255, 0.1); /* Color de guía para identificar */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor-principal">
+    <div class="contenedor-secundario">
+      <p>Este es el Contenedor 1: Aquí puedes agregar botones u otros elementos alineados a la derecha o como desees.</p>
+      <button class="btn btn-primary" style="float: right;">Botón Principal</button>
+    </div>
+
+    <div class="contenedor-secundario">
+      <p>Este es el Contenedor 2: Contiene el carrusel de imágenes.</p>
+      <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagen/imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="imagen/Imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="imagen/Imagen3.jpg" class="d-block w-100" alt="Imagen 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-secundario">
+      <p>Este es el Contenedor 3: Agrega cualquier contenido adicional aquí.</p>
+    </div>
+  </div>
+
+</body>
+</html>

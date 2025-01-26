@@ -1,0 +1,166 @@
+/* Variables globales */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+}
+
+/* General */
+body {
+  padding-top: 70px; /* Ajusta según la altura de la barra de navegación */
+}
+
+/* Navbar */
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Dropdown funcional en hover */
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Enlaces del navbar */
+.nav-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Secciones de contenido */
+.content-section {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+/* Estilos para las tarjetas de libros */
+.book-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color);
+}
+
+.book-card img {
+  width: 100%;
+  max-height: 550px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.book-card h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.book-card .book-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.book-card:hover .book-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.book-info h5 {
+  font-size: 18px;
+}
+
+.book-info p {
+  font-size: 16px;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo del visor de PDF */
+iframe {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+iframe:hover {
+  transform: scale(1.01);
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+  text-align: center;
+  color: var(--text-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons a {
+  margin: 0 5px;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.footer-social-icons a:hover {
+  color: var(--primary-color);
+}

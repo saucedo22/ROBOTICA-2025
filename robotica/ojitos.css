@@ -1,0 +1,20 @@
+#togglePassword {
+    position: absolute;
+    right: 20px;
+    top: 60%;
+    transform: translateX(7%);
+    font-size: 20px;
+    color: #760b0b;
+    cursor: pointer;
+}
+#togglePassword:hover {
+    color: #333;
+}
+
+                                             
+
+
+
+
+
+

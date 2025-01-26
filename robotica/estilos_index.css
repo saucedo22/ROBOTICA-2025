@@ -1,0 +1,156 @@
+/* Estilo general */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./ROJO\ Y\ CELESTE.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    padding-bottom: -200px;
+}
+
+.logo {
+    position: absolute;
+    top: -115px; 
+    left: 83px; 
+    width: 200px; 
+    height: 200px;
+    background-image: url('../robotica/FRONTEDLY-Photoroom.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+.logo2 {
+    position: absolute;
+    top: -120px; 
+    left: 83px; 
+    width: 200px; 
+    height: 200px;
+    background-image: url('../robotica/FRONTEDLY-Photoroom.png'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+
+/*.casino {
+    position: absolute;
+    top: 100px; 
+    left: -450px;
+    width: 550px; 
+    height: 300px; 
+    background-image: url('../robotica/casino.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    transform: rotate(-90deg); 
+    transform-origin: center;
+}
+*/
+
+
+
+.background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.3);/*opacidad del cuadro*/
+    backdrop-filter: blur(0px);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 350px;
+    text-align: center;
+
+    
+}
+
+/* Formularios */
+.form {
+    display: flow-root;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form.hidden {
+    display: none;
+}
+
+h2 {
+    color: #020202;
+    margin-bottom: 3px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 7px 1px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #000;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+input::placeholder, select {
+    color: #000;
+    opacity: 1;
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #76b2fe;
+}
+
+/* Botones */
+.btn, .switch-btn {
+    background-color: #6d97a2;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover, .switch-btn:hover {
+    background-color: #b1463f;
+    transform: scale(1.05);
+}
+
+/* Opciones */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: black;
+}
+
+
+/* Enlaces */
+a {
+    color: black !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
